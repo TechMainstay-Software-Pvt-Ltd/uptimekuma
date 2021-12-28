@@ -1,12 +1,12 @@
-FROM node:16.8-alpine3.11 
+FROM louislam/uptime-kuma
 
 WORKDIR /app
 
-RUN apk --no-cache --virtual build-dependencies add \
-    git
+# RUN apk --no-cache --virtual build-dependencies add \
+#     git
 
-RUN git clone https://github.com/louislam/uptime-kuma.git /app
-RUN npm run setup
+# RUN git clone https://github.com/louislam/uptime-kuma.git /app
+# RUN npm run setup
 
 # Option 1. Try it
 ENTRYPOINT ["node","server/server.js"]

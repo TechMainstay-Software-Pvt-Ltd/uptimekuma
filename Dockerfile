@@ -8,8 +8,5 @@ RUN apk --no-cache --virtual build-dependencies add \
 RUN git clone https://github.com/louislam/uptime-kuma.git /app
 RUN npm run setup
 
-ENV PORT "$PORT"
-
-EXPOSE $PORT
 # Option 1. Try it
 CMD ["node","server/server.js"]

@@ -9,4 +9,4 @@ RUN git clone https://github.com/louislam/uptime-kuma.git /app
 RUN npm run setup
 
 # Option 1. Try it
-CMD ["node","server/server.js"]
+# CMD ["node","server/server.js"]

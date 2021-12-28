@@ -10,6 +10,6 @@ RUN npm run setup
 
 ENV PORT "$PORT"
 
-EXPOSE ${PORT}
+EXPOSE $PORT
 # Option 1. Try it
 CMD ["node","server/server.js"]
